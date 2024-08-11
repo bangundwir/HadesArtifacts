@@ -77,12 +77,12 @@ export const MODEL_CONFIGS = {
     outputCost: 0, // per 1M tokens
     imageCost: 0, // assuming no image processing capability
   },
-  'google/gemma-2-9b-it': {
-    name: 'Gemma 2 9B',
+  "google/gemma-2-9b-it": {
+    name: "Gemma 2 9B",
     contextLength: 8192,
     inputCost: 0.08, // per 1M tokens
     outputCost: 0.08, // per 1M tokens
-    imageCost: 0 // assuming no image processing capability
+    imageCost: 0, // assuming no image processing capability
   },
   "qwen/qwen-2-7b-instruct:free": {
     name: "Qwen 2 7B Instruct (free)",
@@ -137,61 +137,89 @@ export const MODEL_CONFIGS = {
     outputCost: 1, // per 1M tokens
     imageCost: 5, // per 1K requests
   },
-  '01-ai/yi-large-turbo': {
-    name: 'Yi Large Turbo',
+  "01-ai/yi-large-turbo": {
+    name: "Yi Large Turbo",
     contextLength: 4096,
     inputCost: 0.19, // per 1M tokens
     outputCost: 0.19, // per 1M tokens
-    imageCost: 0 // assuming no image processing capability
+    imageCost: 0, // assuming no image processing capability
   },
-  'mistralai/mistral-nemo': {
-    name: 'Mistral Nemo',
+  "mistralai/mistral-nemo": {
+    name: "Mistral Nemo",
     contextLength: 128000,
     inputCost: 0.17, // per 1M tokens
     outputCost: 0.17, // per 1M tokens
-    imageCost: 0 // assuming no image processing capability
+    imageCost: 0, // assuming no image processing capability
   },
-  'meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo': {
-    name: 'TogetherAI-Meta-Llama-3.1-8B-Instruct-Turbo',
+  "meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo": {
+    name: "TogetherAI-Meta-Llama-3.1-8B-Instruct-Turbo",
     contextLength: 128000,
     inputCost: 0.18, // per 1M tokens
     outputCost: 0.18, // per 1M tokens
-    imageCost: 0 // assuming no image processing capability
+    imageCost: 0, // assuming no image processing capability
   },
-  'meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo': {
-    name: 'TogetherAI-Meta-Llama-3.1-70B-Instruct-Turbo',
+  "meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo": {
+    name: "TogetherAI-Meta-Llama-3.1-70B-Instruct-Turbo",
     contextLength: 128000,
     inputCost: 0.88, // per 1M tokens
     outputCost: 0.88, // per 1M tokens
-    imageCost: 0 // assuming no image processing capability
+    imageCost: 0, // assuming no image processing capability
   },
-  'meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo': {
-    name: 'TogetherAI-Meta-Llama-3.1-405B-Instruct-Turbo',
+  "meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo": {
+    name: "TogetherAI-Meta-Llama-3.1-405B-Instruct-Turbo",
     contextLength: 128000,
     inputCost: 5, // per 1M tokens
     outputCost: 5, // per 1M tokens
-    imageCost: 0 // assuming no image processing capability
+    imageCost: 0, // assuming no image processing capability
   },
-  'llama-3.1-70b-versatile': {
-    name: 'Groq llama-3.1-70b-versatile',
+  "llama-3.1-70b-versatile": {
+    name: "Groq llama-3.1-70b-versatile",
     contextLength: 131072,
     inputCost: 0.17, // per 1M tokens
     outputCost: 0.17, // per 1M tokens
-    imageCost: 0 // assuming no image processing capability
+    imageCost: 0, // assuming no image processing capability
   },
-  'llama-3.1-405b-reasoning': {
-    name: 'Groq llama-3.1-405b-reasoning',
+  "llama-3.1-405b-reasoning": {
+    name: "Groq llama-3.1-405b-reasoning",
     contextLength: 131072,
     inputCost: 0.17, // per 1M tokens
     outputCost: 0.17, // per 1M tokens
-    imageCost: 0 // assuming no image processing capability
+    imageCost: 0, // assuming no image processing capability
   },
-  'llama-3.1-8b-instant': {
-    name: 'Groq llama-3.1-8b-instant',
+  "llama-3.1-8b-instant": {
+    name: "Groq llama-3.1-8b-instant",
     contextLength: 131072,
     inputCost: 0.17, // per 1M tokens
     outputCost: 0.17, // per 1M tokens
-    imageCost: 0 // assuming no image processing capability
+    imageCost: 0, // assuming no image processing capability
+  },
+  "google/gemini-pro-1.5-exp": {
+    name: "Gemini Pro 1.5 (0801)",
+    contextLength: 2800000,
+    inputCost: 2.5, // per 1M tokens
+    outputCost: 7.5, // per 1M tokens
+    imageCost: 2.65, // per 1K images
+  },
+  "openai/gpt-4o-2024-08-06": {
+    name: "GPT-4o (2024-08-06)",
+    contextLength: 128000,
+    inputCost: 2.5, // per 1M tokens
+    outputCost: 10, // per 1M tokens
+    imageCost: 7.225, // per 1K images
+  },
+  "cognitivecomputations/dolphin-mixtral-8x7b": {
+    name: "Dolphin 2.6 Mixtral 8x7B 🐬",
+    contextLength: 32768,
+    inputCost: 0.5, // per 1M tokens
+    outputCost: 0.5, // per 1M tokens
+    imageCost: 0, // assuming no image processing capability
+  },
+  "cognitivecomputations/dolphin-mixtral-8x22b": {
+    name: "Dolphin 2.9.2 Mixtral 8x22B 🐬",
+    contextLength: 65536,
+    inputCost: 0.9, // per 1M tokens
+    outputCost: 0.9, // per 1M tokens
+    imageCost: 0, // assuming no image processing capability
   },
 };
 
