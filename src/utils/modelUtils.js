@@ -195,6 +195,13 @@ export const MODEL_CONFIGS = {
     outputCost: 5, // per 1M tokens
     imageCost: 0, // assuming no image processing capability
   },
+  'NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO': {
+    name: 'TogetherAI Nous Hermes 2 - Mixtral 8x7B-DPO',
+    contextLength: 1000000, // assuming large context based on training data
+    inputCost: 0.60, // per 1M tokens
+    outputCost: 0.60, // per 1M tokens
+    imageCost: 0 // assuming no image processing capability
+  },
   "llama-3.1-70b-versatile": {
     name: "Groq llama-3.1-70b-versatile",
     contextLength: 131072,
