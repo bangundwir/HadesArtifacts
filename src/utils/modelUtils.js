@@ -202,6 +202,13 @@ export const MODEL_CONFIGS = {
     outputCost: 0.60, // per 1M tokens
     imageCost: 0 // assuming no image processing capability
   },
+  'cognitivecomputations/dolphin-2.5-mixtral-8x7b': {
+    name: 'TogetherAI Dolphin 2.5 Mixtral 8x7b',
+    contextLength: 0, // context length not provided
+    inputCost: 0.60, // per 1M tokens
+    outputCost: 0.60, // per 1M tokens
+    imageCost: 0 // assuming no image processing capability
+  },
   "llama-3.1-70b-versatile": {
     name: "Groq llama-3.1-70b-versatile",
     contextLength: 131072,
