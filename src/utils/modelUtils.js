@@ -35,6 +35,29 @@ export const MODEL_CONFIGS = {
     outputCost: 1.25, // per 1M tokens
     imageCost: 0.4, // per 1K images
   },
+  'openai/chatgpt-4o-latest': {
+    name: 'ChatGPT-4o',
+    contextLength: 128000,
+    inputCost: 5, // per 1M tokens
+    outputCost: 15, // per 1M tokens
+    imageCost: 7.225 // per 1K images
+  },
+
+  'perplexity/llama-3.1-sonar-huge-128k-online': {
+    name: 'Llama 3.1 Sonar 405B Online',
+    contextLength: 127072,
+    inputCost: 5, // per 1M tokens
+    outputCost: 5, // per 1M tokens
+    imageCost: 5 // per 1K requests
+  },
+
+  'sao10k/l3-lunaris-8b': {
+    name: 'Llama 3 8B Lunaris',
+    contextLength: 8192,
+    inputCost: 2, // per 1M tokens
+    outputCost: 2, // per 1M tokens
+    imageCost: 0 // assuming no image processing capability
+  },
   "perplexity/llama-3.1-sonar-small-128k-online": {
     name: "Llama 3.1 Sonar Small",
     contextLength: 131072,
