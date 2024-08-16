@@ -1,5 +1,5 @@
 {
-  "short_name": "React App",
+  "short_name": "HadesArtifact", 
   "name": "HadesArtifact",
   "icons": [
     {
@@ -19,7 +19,9 @@
     }
   ],
   "start_url": ".",
-  "display": "standalone",
+  "display": "standalone",  
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#ffffff",
+  "orientation": "portrait-primary",
+  "description": "An app to manage Hades artifacts."
 }
