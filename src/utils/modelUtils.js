@@ -42,6 +42,20 @@ export const MODEL_CONFIGS = {
     outputCost: 15, // per 1M tokens
     imageCost: 7.225 // per 1K images
   },
+  'nousresearch/hermes-3-llama-3.1-405b:extended': {
+    name: ' Openrouter Hermes 3 405B Instruct (extended)',
+    contextLength: 128000,
+    inputCost: 0, // per 1M tokens
+    outputCost: 0, // per 1M tokens
+    imageCost: 0 // assuming no image processing capability
+  },
+  'nousresearch/hermes-3-llama-3.1-405b': {
+    name: 'OpenRouter Hermes 3 405B Instruct',
+    contextLength: 131072,
+    inputCost: 0, // per 1M tokens
+    outputCost: 0, // per 1M tokens
+    imageCost: 0 // assuming no image processing capability
+  },
 
   'perplexity/llama-3.1-sonar-huge-128k-online': {
     name: 'Llama 3.1 Sonar 405B Online',
